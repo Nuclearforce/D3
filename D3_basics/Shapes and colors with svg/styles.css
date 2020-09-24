@@ -1,0 +1,18 @@
+body {
+    margin:0px;
+    overflow:hidden;
+}
+
+.highlighted{
+    color:red;
+}
+
+.lines{
+    stroke:black;
+    stroke-width:10;
+}
+
+.lines path {
+    stroke:red;
+    stroke-linejoin: round;
+}

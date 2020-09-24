@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 11px sans-serif;
+  max-width: 800px;
+}
+
+.line {
+  fill: none;
+  stroke-width: 3px;
+}
+
+.overlay {
+    fill: none;
+    pointer-events: all;
+  }
+
+.hover-line {
+    stroke: #B74779;
+    stroke-width: 2px;
+    stroke-dasharray: 3,3;
+  }
+
+path {
+  stroke: #111;
+  stroke-width: .5px;
+}
+
+.legendThreshold {
+      font-size: 12px;
+      font-family: sans-serif;
+  }
+
+
+div.tooltip { 
+          position: absolute;     
+          text-align: center;     
+          width: 80px;          
+          height: 24px;         
+          padding: 2px;       
+          font: 12px sans-serif;    
+          background: #fff; 
+          border: 0px;        
+          pointer-events: none;     
+      }
+
+
+</style>
+<body>
+17 in every 100 South Africans 25-64 years old hold a post school credential. Since 2009, credential attainment has increased by 3.3 percentage points. Although credential attainment has seen progress, urgent action is required to up-skill the nation and reach the goals set in the National Development Plan.
+<p>
+<svg id="ca1" width="650" height="300">
+<title>Credential Attainment</title>
+</svg><p> 
+What does educational attainment look like in South Africa?  
+<br>
+With the fourth industrial revolution looming, South African President Cyril
+Ramaphosa has advocated that now, more than ever before, there is a need to
+skill and re-skill the nation to take and to make job opportunities in the
+labour market. Unfortunately, fewer than 15% of South Africans have a post
+school credential.
+<p>
+Credential attainment by province
+<br>
+Among working-age South Africans (25-64 years), attainment of credentials varies
+across provinces.  The Western Cape and Gauteng provinces have a higher
+proportion of citizens with a post school credential, 20% and 25% respectively,
+in comparison to other provinces in the country.  <p>
+<form id="form">
+    <input checked type="radio" name="stack" value="2009">2009<br>
+    <input type="radio" name="stack" value="2016">2016<br>
+</form><br>
+<svg id="ca2" width="960" height="500">
+</svg><p>
+<script src="d3.v5.min.js"></script>
+<script src="topojson.v2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+<script src="sp-line1.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Making a map</title>
+        <!-- <link rel="stylesheet" href="styles.css"> -->
+        <script type="text/javascript" src="d3.js"></script>
+        <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+        <style>
+
+            body{
+                overflow:hidden;                
+            }
+            .country {
+                fill:green;
+                stroke: black;
+                stroke-width: 0.1px;
+            }
+            .sphere {
+                fill:lightblue;
+            }
+
+            .country:hover{
+                fill:red;
+            }
+        </style>
+    </head>
+    <body>
+        <svg width="960" height="500"></svg>
+        <script src="bundle.js"></script>
+    </body>
+
+</html>

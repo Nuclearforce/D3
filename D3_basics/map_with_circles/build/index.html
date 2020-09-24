@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Circles on map</title>
+        <!-- <link rel="stylesheet" href="styles.css"> -->
+        <script type="text/javascript" src="d3.js"></script>
+        <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+        <style>
+
+            body{
+                overflow:hidden;                
+            }
+            .country {
+                stroke: black;
+                stroke-width: 0.1px;
+            }
+            .sphere {
+                fill:#eaeaea;
+            }
+
+            .country:hover{
+                fill:rgb(44, 220, 233);
+            }
+
+            .legend-title{
+                font-size:2.2em;
+               fill: #444444;
+               font-family:sans-serif;
+            }
+            .tick circle, .country-circle{ 
+               fill:#5fe9ee;
+               fill-opacity:0.6;
+               stroke:black;
+               stroke-opacity: 0.5;
+               pointer-events:none;
+           }
+
+           .tick text{
+               font-size:1.5em;
+               fill: #444444;
+               font-family:sans-serif;
+           }
+        </style>
+    </head>
+    <body>
+        <svg width="960" height="500"></svg>
+        <script src="bundle.js"></script>
+    </body>
+
+</html>

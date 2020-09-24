@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>choropleth map</title>
+        <!-- <link rel="stylesheet" href="styles.css"> -->
+        <script type="text/javascript" src="d3.js"></script>
+        <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+        <style>
+
+            body{
+                overflow:hidden;                
+            }
+            .country {
+                stroke: black;
+                stroke-width: 0.1px;
+            }
+            .sphere {
+                fill:lightblue;
+            }
+
+            .country:hover{
+                fill:red;
+            }
+
+            tick circle{ 
+               stroke:black;
+               stroke-opacity: 0.5;
+           }
+
+           .tick text{
+               font-size:1em;
+               fill: black;
+               font-family:sans-serif;
+           }
+        </style>
+    </head>
+    <body>
+        <svg width="960" height="500"></svg>
+        <script src="bundle.js"></script>
+    </body>
+
+</html>
